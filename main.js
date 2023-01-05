@@ -37,14 +37,21 @@ function Vendedor(codigo, descricao){
 }
 
 
-//Populando a base
 
-produtos.push(new Produto( 1 , 'Dipirona Monohidratada', 24.99));
-produtos.push(new Produto( 2 , 'Dorflex', 12.54));
-clientes.push(new Cliente( 1 , 'Cliente 1'));
-clientes.push(new Cliente( 2 , 'Cliente 2'));
-vendedores.push(new Vendedor( 1 , 'Vendedor 1'));
-vendedores.push(new Vendedor( 2 , 'Vendedor 2'));
+
+const triggerProduto = document.querySelector('#enviarProdutos');
+
+const cadastrarProduto = () => {
+
+    const codProduto = document.querySelector('#codigoProduto');
+    const descProduto = document.querySelector('#descricaoProduto');
+    const precoProduto = document.querySelector('#precoProduto');
+
+    produtos.push(new Produto( codProduto.value , descProduto.value, precoProduto.value));
+}
+
+triggerProduto.addEventListener('click', cadastrarProduto)
+
 
 
 
@@ -65,10 +72,10 @@ function Promocao(leveX, pagueY){
     }
 }
 
-let = new Promocao(2, 2);
 
+//Populando a base
 
-
+let = new Promocao(2, 2); // retirar
 
 
 

@@ -8,6 +8,36 @@
     <title> CRUD </title>
 </head>
 <body>
+    <main>
+        <h1 class="tituloPrincipal"> Cadastro de Itens </h1>
+
+        <div class="botoes">
+            <button>Cadastrar Produto</button>
+            <button>Cadastrar Cliente </button>
+            <button>Cadastrar Vendedor</button>
+        </div>
+    </main>
+
+    <br>
+    <br>
+    <div class="modal-container-produto">
+        <div>
+        <label for="nome">Código</label>
+        <input id="codigoProduto" name="codigoProduto" type="number" min="0" step="1" placeholder="Código" required>
+    </div>
+    <div>
+        <label for="descricao">Descrição</label>
+        <input id="descricaoProduto" type="text" placeholder="Descrição" required>
+    </div>
+
+    <div>
+        <label id="precoProduto" for="preco">Preço</label>
+        <input id="precoProduto" type="number" name="precoProduto">
+    </div>
+    <br>
+    <input id="enviarProdutos" type="submit">
+
+    </div>
     
 
     <script src="./main.js" defer></script>
